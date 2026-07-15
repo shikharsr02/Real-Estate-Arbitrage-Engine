@@ -8,10 +8,10 @@ I engineered an automated data pipeline that ingests raw real estate listings, n
 ## The Final Product
 
 ### 1. Macro Market Overview
-![Dashboard Page 1](screenshots/dashboard_page1.png)
+![Dashboard Page 1](dashboard_page1.png)
 
 ### 2. The Arbitrage Screener
-![Dashboard Page 2](screenshots/dashboard_page2.png)
+![Dashboard Page 2](dashboard_page2.png)
 
 ##  Tech Stack & Workflow
 1. **Data Extraction & Cleaning:** Python (BeautifulSoup, Pandas, NumPy)
