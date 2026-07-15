@@ -19,17 +19,17 @@ I engineered an automated data pipeline that ingests raw real estate listings, n
 3. **Business Logic & Aggregation:** Advanced SQL (Views, CTEs, Window Functions)
 4. **Business Intelligence & UI:** Power BI (DAX, Data Modeling, Conditional Formatting)
 
-##  Data Architecture (Star Schema)
+## Data Architecture (Star Schema)
 To ensure optimal query performance and eliminate text redundancy, the raw dataset was normalized into a Star Schema:
 * **`Fact_Listings`**: The core transactional table holding quantitative metrics (Price, Area, Rate_Per_SqFt).
 * **`Dim_Location`**: Dimension table containing 1,600+ unique City/Locality combinations.
 * **`Dim_Property_Details`**: Dimension table managing 300+ unique structural configurations (BHK, Status, Type).
 
-##  Key Business Insights
+## Key Business Insights
 * **The Gurgaon Anomaly:** Despite maintaining the highest average market rates in the region, specific micro-markets in Gurgaon (e.g., Sector 104) consistently contain the highest volume of heavily discounted (>20%) listings. 
 * **Area vs. Price Outliers:** The interactive scatter plot successfully isolates large square-footage properties priced significantly beneath the regional trendline, flagging them for immediate visual review by capital allocators.
 
-## 📂 Repository Navigation
+## Repository Navigation
 * `data/`: Raw and cleaned datasets.
 * `scripts_python/`: Web scraping and data manipulation notebooks.
 * `sql_queries/`: Database creation and arbitrage logic Views.
